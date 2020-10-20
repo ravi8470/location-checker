@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon server.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,5 +17,8 @@
     "express-session": "^1.17.1",
     "mongoose": "^5.10.9",
     "mongoose-bcrypt": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }

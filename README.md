@@ -6,13 +6,18 @@ This app has two pre-existing users, one is admin and another is user. The admin
 
 1. node.js
 2. mongodb
+3. docker
 
 # Installation
+
+docker and docker-compose needs to be installed.
 
 1. clone the project
 2. go to project root directory
 3. run cmd - 'npm i'
-4. run cmd - 'npm start'
+4. Port 5000 should be free.
+5. run cmd - 'docker-compose up'
+6. Go to localhost:5000 in browser to access the app.
 
 # How to use?
 
