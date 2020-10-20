@@ -19,6 +19,12 @@ docker and docker-compose needs to be installed.
 5. run cmd - 'docker-compose up'
 6. Go to localhost:5000 in browser to access the app.
 
+### Note: to run without docker perform till step 4 above then: 
+5. replace DB_URL in .env file to 'mongodb://localhost:27017/codeCloudsDB123' OR
+delete the .env file in the project root.
+6. run cmd - 'npm start'
+7. Go to localhost:5000 in browser to access the app.
+
 # How to use?
 
 1. First login as 'admin' using credentials ravi:1234.
