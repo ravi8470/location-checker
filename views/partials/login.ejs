@@ -1,0 +1,18 @@
+<form method="post" action="/auth/login">
+  <p>
+    <label>Username:</label>
+    <input type="text" name="userName" required>
+  </p>
+  <p>
+    <label>Password:</label>
+    <input type="password" name="password" required>
+  </p>
+  <label>Role:</label><br>
+  <input type="radio" id="admin" name="role" value="admin" checked>
+  <label for="admin">Admin</label><br>
+  <input type="radio" id="user" name="role" value="user">
+  <label for="user">User</label><br>
+  <p>
+    <input type="submit" value="Login">
+  </p>
+</form>

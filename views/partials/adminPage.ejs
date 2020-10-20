@@ -1,0 +1,21 @@
+
+<%if (city) { %>
+  <p>Your added city is <%= city %>.</p>
+  <form action="/city/delete-city" method="GET">
+    <div>
+      <button type="submit">Delete selected City</button>
+    </div>
+  </form>
+<% } %>
+
+<%if (!city) { %>
+  Add a City.
+  <form method="post" action="/city/save-city">
+  
+    <%- include('cities') %>
+  
+  <p>
+    <input type="submit" value="Save">
+  </p>
+</form>  
+<% } %>

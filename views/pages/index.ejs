@@ -1,0 +1,21 @@
+<%if (isLoggedIn) { %>
+  <%- include('../partials/logout') %>
+  <h2>Hello <%= userName %></h2>
+  <h3>Role: <%= role %> </h3>
+<% } %>
+
+<%if (invalidAuth) { %>
+  <h3>Login Failed!</h3>
+<% } %>
+
+<%if (!isLoggedIn) { %>
+  <%- include('../partials/login') %>
+<% } %>
+
+<%if (role === 'admin') { %>
+  <%- include('../partials/adminPage') %>
+<% } %>
+
+<%if (role === 'user') { %>
+  <%- include('../partials/userPage') %>
+<% } %>
